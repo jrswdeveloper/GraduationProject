@@ -1,4 +1,4 @@
-# GraduationProject
+# GraduationProject -- Autonomous Car
  The car advancing on rough terrain.
  
 **Description:** An image of the region will be taken with the depth camera in the environment and obstacle recognition and detection will be made by 3d image processing. Then, it will be sent to the Arduino's MCU via Bluetooth and the car will advance to the target without hitting the obstacles.
@@ -19,5 +19,13 @@
                Intel RealSense R200 Depth Camera Manager 2.1.27.2853 </pre>
                
 
-**Note:**  *The project is still continue, not completed yet. The uploaded codes include the getting real world coordinates and saving 3d data(Source.cpp), Ground plane segmentation with RANSAC algorithm, object segmentation with Euclidean Clustering algorithm and Object detection with Bounding Box(Source2.cpp).*
+This project consists of 3 stages which are 3D Image Processing, Path Planning and advancing the car with Arduino. But the last stage could not be realized due to the covid-19 pandemic, because my setup equipments are in the university. 
 
+# Stage 1 : 3D Image Processing
+
+The first thing we needed to do was create the dataset. For this reason, we bought the equipment necessary for the scene setup with my project friend Büşra Göl and realized the scene setup. With the Intel Real Sense R200 depth camera, we took the image of the scene and objects at a height of 2 meters. Then we saved it as a file with the pcd extension and created our data set.
+
+
+
+
+After creating the dataset, we had to segment the plane and objects. I and Büşra(my project friend) started with Ground Plane Segmentation, and we used RANSAC(Random Sample Consensus) algorithm for this.
