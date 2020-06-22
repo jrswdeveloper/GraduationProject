@@ -21,11 +21,27 @@
 
 This project consists of 3 stages which are 3D Image Processing, Path Planning and advancing the car with Arduino. But the last stage could not be realized due to the covid-19 pandemic, because my setup equipments are in the university. 
 
-# Stage 1 : 3D Image Processing
+## Stage 1 : 3D Image Processing
 
 The first thing we needed to do was create the dataset. For this reason, we bought the equipment necessary for the scene setup with my project friend Büşra Göl and realized the scene setup. With the Intel Real Sense R200 depth camera, we took the image of the scene and objects at a height of 2 meters. Then we saved it as a file with the pcd extension and created our data set.
 
+![ds1](https://user-images.githubusercontent.com/62018540/85332391-8c6f4d80-b4e0-11ea-8618-b61725c66b2a.jpg)
+Figure 1. Scene view from side
 
+![ds3](https://user-images.githubusercontent.com/62018540/85332447-a577fe80-b4e0-11ea-84a1-59cf652b3187.JPG)
+Figure 2. Scene view from the top-side
 
+![ds4](https://user-images.githubusercontent.com/62018540/85332471-af016680-b4e0-11ea-8dae-bafc6406b0ed.JPG)
+Figure 3. Scene view from top
 
 After creating the dataset, we had to segment the plane and objects. I and Büşra(my project friend) started with Ground Plane Segmentation, and we used RANSAC(Random Sample Consensus) algorithm for this.
+
+![groundplane](https://user-images.githubusercontent.com/62018540/85332510-bf194600-b4e0-11ea-8e70-900594efe772.JPG)
+Figure 4. Ground Plane without Objects
+
+Then we continued with object segmentation. And we used Euclidean Clustering algorithm for this.
+
+![objs](https://user-images.githubusercontent.com/62018540/85332543-cd676200-b4e0-11ea-8fc9-733d4e4858b7.JPG)
+Objects without Ground Plane
+
+
