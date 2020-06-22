@@ -34,10 +34,12 @@ Figure 2. Scene view from the top-side
 ![ds4](https://user-images.githubusercontent.com/62018540/85332471-af016680-b4e0-11ea-8dae-bafc6406b0ed.JPG)
 Figure 3. Scene view from top
 
+
 After creating the dataset, we had to segment the plane and objects. I and Büşra(my project friend) started with Ground Plane Segmentation, and we used RANSAC(Random Sample Consensus) algorithm for this.
 
 ![groundplane](https://user-images.githubusercontent.com/62018540/85332510-bf194600-b4e0-11ea-8e70-900594efe772.JPG)
 Figure 4. Ground Plane without Objects
+
 
 Then we continued with object segmentation. And we used Euclidean Clustering algorithm for this.
 
