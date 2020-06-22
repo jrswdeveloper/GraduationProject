@@ -42,6 +42,6 @@ Figure 4. Ground Plane without Objects
 Then we continued with object segmentation. And we used Euclidean Clustering algorithm for this.
 
 ![objs](https://user-images.githubusercontent.com/62018540/85332543-cd676200-b4e0-11ea-8fc9-733d4e4858b7.JPG)
-Objects without Ground Plane
+Figure 5. Objects without Ground Plane
 
 
