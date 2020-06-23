@@ -48,4 +48,18 @@ Then we continued with object segmentation. And we used Euclidean Clustering alg
 Figure 5. Objects without Ground Plane  
 
 
-Now that we have finished our segmentation processes, we can proceed the detection process. For object detection, we first thought of using bounding boxes. We did not need to find a 3-dimensional bounding box because the car would not be displaced in the 3rd dimension. For us, only the width and height measurements were sufficient. So we decided to find a 2-dimensional bounding box. First we found the projections of the objects to the ground plane, and then we thought of finding the bounding boxes of the projections of the objects. However, it was very difficult for us to draw a bounding box polygon with the PCL library and save it to the file, so after doing some research, we deduced that finding the convex hulls of the projections is also for the same purpose.
+Now that we have finished our segmentation processes, we can proceed the detection process. For object detection, we first thought of using bounding boxes. We did not need to find a 3-dimensional bounding box because the car would not be displaced in the 3rd dimension. For us, only the width and height measurements were sufficient. So we decided to find a 2-dimensional bounding box. First we found the projections of the objects to the ground plane, and then we thought of finding the bounding boxes of the projections of the objects.
+
+![projections](https://user-images.githubusercontent.com/62018540/85346985-da477e00-b4ff-11ea-888a-73a157a7ec50.jpg)
+Figure 6. Projections of Objects to the Ground Plane from side
+![od1](https://user-images.githubusercontent.com/62018540/85347030-0400a500-b500-11ea-94ee-3ff22db0b767.JPG)
+Figure 7. Projections of Objects to the Ground Plane from top  
+
+However, it was very difficult for us to draw a bounding box polygon with the PCL library and save it to the file, so after doing some research, we deduced that finding the convex hulls of the projections is also for the same purpose.
+
+![hulls](https://user-images.githubusercontent.com/62018540/85347139-65287880-b500-11ea-8138-ad53714d8b2b.JPG)
+Figure 8. Convex Hulls of Projections of Objects  
+
+And we finished the first stage of our graduation project, is the 3d image processing stage!! :)
+
+## Stage 2 : Path Planning
