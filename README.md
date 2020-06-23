@@ -52,6 +52,7 @@ Now that we have finished our segmentation processes, we can proceed the detecti
 
 ![projections](https://user-images.githubusercontent.com/62018540/85346985-da477e00-b4ff-11ea-888a-73a157a7ec50.jpg)
 Figure 6. Projections of Objects to the Ground Plane from side
+
 ![od1](https://user-images.githubusercontent.com/62018540/85347030-0400a500-b500-11ea-94ee-3ff22db0b767.JPG)
 Figure 7. Projections of Objects to the Ground Plane from top  
 
