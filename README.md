@@ -61,6 +61,11 @@ However, it was very difficult for us to draw a bounding box polygon with the PC
 ![hulls](https://user-images.githubusercontent.com/62018540/85347139-65287880-b500-11ea-8138-ad53714d8b2b.JPG)
 Figure 8. Convex Hulls of Projections of Objects  
 
-And we finished the first stage of our graduation project, is the 3d image processing stage!! :)
+And we finished the first stage of my graduation project, is the 3d image processing stage!! :)
 
-## Stage 2 : Path Planning
+## Stage 2 : Path Planning  
+
+
+Now that we have finished the 3D image processing phase, we had to set the starting and target points for the car. Then we had to find the shortest path to get the car to the destination. Dijkstra algorithm was the most suitable for us in the shortest path algorithms because it was both faster and lower cost. Dijkstra selects the shortest distance when moving from one node to another, thereby aiming to find the global optimum from the local optimum. Dijkstra's Big O Notation is O(ElogV).V is the number of vertices, E is the total number of edges.
+
+(It will be continue..)
