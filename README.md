@@ -74,3 +74,7 @@ It seemed more comfortable to implement path planning with Java. But we had a pr
 
 ![pathh](https://user-images.githubusercontent.com/62018540/85627269-ee61bb80-b676-11ea-9142-845e512facba.JPG)
 Figure 9. Shortest Path Planning
+
+## Stage 3 : Advancing the Car with Arduino
+
+Sorry, we could not perform this stage. Because our scene setup and materials were at university and we were forbidden to go to university because of the covid-19 pandemic.
