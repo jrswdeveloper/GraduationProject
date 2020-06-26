@@ -25,7 +25,7 @@ using namespace std::chrono_literals;
 
 int main(int argc, char** argv)
 {
-/*
+
 	// Read in the cloud data
 	pcl::PCDReader reader;
 	pcl::PCDWriter writer;
@@ -120,8 +120,8 @@ int main(int argc, char** argv)
 		writer.write<pcl::PointXYZ>(ss.str(), *cloud_cluster, false); //*
 		j++;
 	}
-
-	//                   B O U N D I N G         B O X
+/*
+	//   3D    B O U N D I N G      B O X
 	pcl::PointCloud<pcl::PointXYZ>::Ptr bb_cloud(new pcl::PointCloud<pcl::PointXYZ>());
 	std::ofstream myfile;
 	myfile.open("D:/Hp/3dboundingbox_minmaxpoints.txt");
@@ -157,8 +157,8 @@ int main(int argc, char** argv)
 	myfile.close();
 */
 
-	// Cluster projection islemi
-	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
+	// Cluster projection ve Convex Hull islemi
+	pcl::PointCloud<pcl::PointXYZ>::Ptr cloudd(new pcl::PointCloud<pcl::PointXYZ>);
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_projected(new pcl::PointCloud<pcl::PointXYZ>);
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_hull(new pcl::PointCloud<pcl::PointXYZ>);
 	pcl::PCDReader reader;
@@ -167,7 +167,7 @@ int main(int argc, char** argv)
 	for (int a = 0; a < 5; a++) {
 		std::stringstream clusterpath;
 		clusterpath << "D:/Hp/objects/cloud_cluster_" << a << ".pcd";
-		reader.read(clusterpath.str(), *cloud);
+		reader.read(clusterpath.str(), *cloudd);
 		// Create a set of planar coefficients with X=Y=0,Z=1
 		pcl::ModelCoefficients::Ptr coefficients(new pcl::ModelCoefficients());
 		coefficients->values.resize(4);
@@ -178,7 +178,7 @@ int main(int argc, char** argv)
 		// Create the filtering object
 		pcl::ProjectInliers<pcl::PointXYZ> proj;
 		proj.setModelType(pcl::SACMODEL_PLANE);
-		proj.setInputCloud(cloud);
+		proj.setInputCloud(cloudd);
 		proj.setModelCoefficients(coefficients);
 		proj.filter(*cloud_projected);
 
@@ -194,8 +194,8 @@ int main(int argc, char** argv)
 
 	}
 
-	// Cluster'larin projection'larini bir arada görmek icin
-	// tum cluster'larin projection'larini tek bir file'a yazdirma islemi
+	// Cluster'larin convex hull'lerini bir arada görmek icin
+	// tum cluster'larin convex hull'lerini tek bir file'a yazdirma islemi
 
 	std::ofstream myfile;
 	myfile.open("D:/Hp/projection/myboundingboxfile.txt");
