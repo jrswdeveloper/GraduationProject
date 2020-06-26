@@ -3,7 +3,7 @@
  
 **Description:** An image of the region will be taken with the depth camera in the environment and obstacle recognition and detection will be made by 3d image processing. Then, it will be sent to the Arduino's MCU via Bluetooth and the car will advance to the target without hitting the obstacles.
 
-**Hardware:** 
+**Hardware/Scene Setup:** 
               <pre>Depth Camera Intel Realsense R200 
                      Arduino Mega 
                      The Car Platform
@@ -12,15 +12,17 @@
                     Camera Stabilizer Support </pre>
              
              
-**Software:**  <pre>PCL (Point Cloud Library) for cloud processing
+**Software:**  <pre>PCL (Point Cloud Library) for point cloud data processing
                C++
-               Visual Studio 2015
+               Java
+               Microsoft Visual Studio 2015
                Intel RealSense SDK 1.0
                Intel RealSense R200 Depth Camera Manager 2.1.27.2853
-               Cloud Compare </pre>
+               Cloud Compare
+               Eclipse </pre>
                
 
-This project consists of 3 stages which are 3D Image Processing, Path Planning and advancing the car with Arduino. But the last stage could not be realized due to the covid-19 pandemic, because my setup equipments are in the university. 
+This project consists of 3 stages which are 3D Image Processing(Computer Vision), Path Planning and Advancing the car with Arduino. But the last stage could not be realized due to the covid-19 pandemic, because my setup equipments are in the university. 
 
 ## Stage 1 : 3D Image Processing
 
