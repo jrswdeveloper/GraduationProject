@@ -74,7 +74,7 @@ While implementing path planning, we drew a road for ourselves. And we took step
 The our road consists of these steps: Creating visibility graph from convex hulls, Weighting the edges of the visibility graph, Finding the shortest path with Dijkstra.
 It seemed more comfortable to implement path planning with Java. But we had a problem. Our Convex hull coordinates were very large and contained negative values. Java only works with positive values, and the STDDRAW library we use for graphical operations accepts values between 0 and 1. As a solution to this, we first added the smallest negative value to all coordinate points. So we offset all the points equally. We divide them all by 10 ^ 3 to ensure that there are values between 0 and 1. But we still had values exceeding 1. To get rid of this, we divide all the coordinates by 2.  
 
-![pathh](https://user-images.githubusercontent.com/62018540/85627269-ee61bb80-b676-11ea-9142-845e512facba.JPG)
+![pathh](https://user-images.githubusercontent.com/62018540/85627269-ee61bb80-b676-11ea-9142-845e512facba.JPG)<br/> 
 Figure 9. Shortest Path Planning
 
 ## Stage 3 : Advancing the Car with Arduino
