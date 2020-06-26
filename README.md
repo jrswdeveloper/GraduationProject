@@ -81,4 +81,4 @@ Figure 9. Shortest Path Planning
 
 Sorry, we could not perform this stage. Because our scene setup and materials were at university and we were forbidden to go to university because of the covid-19 pandemic.
 
-***Note*** : **The repository only includes C++ codes, because not all of the Java code is ours. So I didn't find it right to share. Source.cpp includes receiving and saving 3d data, Source2.cpp includes Ground Plane Segmentation, Object segmentation, Object detection steps.** 
+***Note : The repository only includes C++ codes, because not all of the Java code is ours. So I didn't find it right to share. Source.cpp includes receiving and saving 3d data, Source2.cpp includes Ground Plane Segmentation, Object segmentation, Object detection steps.*** 
