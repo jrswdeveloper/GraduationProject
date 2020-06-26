@@ -5,7 +5,7 @@
 #include <iostream> 
 #include "util_render.h"
 #include <pcl/point_types.h>
-#include <pcl/io/ply_io.h>
+#include <pcl/io/pcd_io.h>
 
 using namespace std;
 #define MAX_FRAMES 150
@@ -95,8 +95,8 @@ int wmain(int argc, WCHAR* argv[]) {
 	//char filename[100];
 	//sprintf(filename, "C:/Users/Hp/Desktop/ornek.xyz", writeCount);
 	//pcl::io::savePCDFileASCII(filename, cloud);
-	pcl::io::savePLYFile("C:/Users/Hp/Desktop/sahne_ply.ply",cloud);
-	std::cerr << "Saved " << cloud.points.size() << " data points to sahne.ply." << std::endl;
+	pcl::io::savePCDFile("D:/Hp/Desktop/newsahne_pcd.pcd",cloud);
+	std::cerr << "Saved " << cloud.points.size() << " data points to newsahne.pcd." << std::endl;
 	for (std::size_t i = 0; i < cloud.points.size(); ++i)
 	std::cerr << "    " << cloud.points[i].x << " " << cloud.points[i].y << " " << cloud.points[i].z << std::endl;
 	
