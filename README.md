@@ -26,7 +26,7 @@ This project consists of 3 stages which are 3D Image Processing(Computer Vision)
 
 ## Stage 1 : 3D Image Processing
 
-The first thing we needed to do was create the dataset. For this reason, we bought the equipment necessary for the scene setup with my project friend Büşra Göl and realized the scene setup. With the Intel Real Sense R200 depth camera, we took the image of the scene and objects at a height of 2 meters. Then we saved it as a file with the .pcd(point cloud data) extension and created our data set.
+The first thing we needed to do was create the dataset. For this reason, we bought the equipment necessary for the scene setup with my project friend and realized the scene setup. With the Intel Real Sense R200 depth camera, we took the image of the scene and objects at a height of 2 meters. Then we saved it as a file with the .pcd(point cloud data) extension and created our data set.
 
 ![ds1](https://user-images.githubusercontent.com/62018540/85332391-8c6f4d80-b4e0-11ea-8618-b61725c66b2a.jpg)
 Figure 1. Scene view from side
